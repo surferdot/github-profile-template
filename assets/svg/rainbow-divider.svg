@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="30" viewBox="0 0 800 30" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9A9E" />
+      <stop offset="20%" stop-color="#FAD0C4" />
+      <stop offset="40%" stop-color="#FFECD2" />
+      <stop offset="60%" stop-color="#A1C4FD" />
+      <stop offset="80%" stop-color="#C2E9FB" />
+      <stop offset="100%" stop-color="#CAC9FF" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 主波浪 -->
+  <path d="M0,15 Q100,5 200,15 T400,15 T600,15 T800,15" stroke="url(#rainbow)" stroke-width="8" fill="none" stroke-linecap="round">
+    <animate attributeName="d" 
+       values="M0,15 Q100,5 200,15 T400,15 T600,15 T800,15;
+               M0,15 Q100,25 200,15 T400,15 T600,15 T800,15;
+               M0,15 Q100,5 200,15 T400,15 T600,15 T800,15" 
+       dur="10s" 
+       repeatCount="indefinite" />
+  </path>
+  
+  <!-- 装饰小点 -->
+  <g fill="white" opacity="0.7">
+    <circle cx="100" cy="15" r="3">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="15" r="3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="15" r="3">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="15" r="3">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
