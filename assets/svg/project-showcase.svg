@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变 -->
+  <defs>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12c2e9" />
+      <stop offset="50%" stop-color="#c471ed" />
+      <stop offset="100%" stop-color="#f64f59" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- 项目卡片背景 -->
+  <rect x="10" y="10" width="380" height="180" rx="15" ry="15" fill="url(#cardGradient)" filter="url(#shadow)" opacity="0.9" />
+  
+  <!-- 项目标题 -->
+  <text x="30" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">项目名称</text>
+  
+  <!-- 分隔线 -->
+  <line x1="30" y1="60" x2="370" y2="60" stroke="white" stroke-width="2" opacity="0.6" />
+  
+  <!-- 项目描述 -->
+  <text x="30" y="90" font-family="Arial, sans-serif" font-size="14" fill="white">这是一个精彩的项目描述。请在此处填写您的项目详情，</text>
+  <text x="30" y="115" font-family="Arial, sans-serif" font-size="14" fill="white">展示项目的特点和您的技术能力。</text>
+  
+  <!-- 技术标签 -->
+  <rect x="30" y="140" width="70" height="25" rx="12.5" ry="12.5" fill="white" opacity="0.2" />
+  <text x="65" y="157" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">React</text>
+  
+  <rect x="110" y="140" width="70" height="25" rx="12.5" ry="12.5" fill="white" opacity="0.2" />
+  <text x="145" y="157" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Node.js</text>
+  
+  <rect x="190" y="140" width="90" height="25" rx="12.5" ry="12.5" fill="white" opacity="0.2" />
+  <text x="235" y="157" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">MongoDB</text>
+  
+  <!-- 星级图标和数字 -->
+  <path d="M320,145 L323,138 L330,137 L325,132 L326,125 L320,128 L314,125 L315,132 L310,137 L317,138 Z" fill="white" />
+  <text x="355" y="157" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">⭐ 123</text>
+</svg>
